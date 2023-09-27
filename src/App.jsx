@@ -1,40 +1,24 @@
+import { Box, CssBaseline } from "@mui/material"
+import Header from "components/Header"
 
-import { Button, Container } from '@mui/material'
 
 function App() {
 
 
   return (
     <>
-      <Container
-        maxWidth='xl'
+      <CssBaseline />
+      <Box 
         sx={{
-          background: "#eee"
+          display: 'flex',
+          flexDirection: 'column',
+          heihgt: '100vh'
         }}
       >
-
-
-        {
-          /*
-
-            Appbar
-            Banner
-            Promotions
-            title
-            Products
-            footer
-            searchbox
-            appdrawer
-
-          */
-        }
-
-
-
-
-        <Button variant='contained'>Test</Button>
-      </Container>
-      
+        <Box>
+          <Header />
+        </Box>
+      </Box>
     </>
   )
 }
